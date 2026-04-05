@@ -1,0 +1,126 @@
+.main {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+    width: 1000px;
+}
+
+.container,
+.dark,
+.last-box {
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container,
+.last-box {
+    flex: 1;  
+}
+
+.dark {
+    flex: 2;   
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    font-family: 'Lora', serif;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+p, button {
+    font-family: Arial, sans-serif;
+}
+
+.container,
+.dark,
+.last-box {
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    background: linear-gradient(135deg, #7b2ff7, #f107a3);
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 48px;
+}
+
+.container p {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.dark {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.item h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.last-box {
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.right button {
+    background: linear-gradient(to right, #7b2ff7, #f107a3);
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.right button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(123, 47, 247, 0.6);
+}
+
+.note {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 15px;
+    line-height: 1.4;
+}
